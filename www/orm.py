@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'nanc'
+__author__ = 'Michael Liao'
 
 import asyncio, logging
 
@@ -171,7 +171,7 @@ class Model(dict, metaclass=ModelMetaclass):
         if where:
             sql.append('where')
             sql.append(where)
-        if agrs is None:
+        if args is None:
             args = []
         orderBy = kw.get('orderBy', None)
         if orderBy:
